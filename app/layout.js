@@ -1,19 +1,25 @@
-import { Inter } from "next/font/google";
+import { Nunito } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Nav from "@/components/Nav";
 
-const inter = Inter({ subsets: ["latin"] });
+const nunito = Nunito({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-nunito",
+});
 
 export const metadata = {
-  title: "Revangga",
-  description: "Revangga Portfolio",
+  title: "Revangga Portfolio",
+  description: "Revangga Putra Portfolio",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`{inter.className} overflow-x-hidden`}>
+      <body
+        className={`${nunito.variable} overflow-x-hidden bg-primary text-tertiary`}
+      >
         <Header />
         <Nav />
         {children}
