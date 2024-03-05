@@ -72,7 +72,7 @@ const Work = () => {
           ))}
         </div>
         {/* project */}
-        <div className="max-w-[95%]">
+        <div className="max-w-[80%] mx-auto">
           <Swiper
             breakpoints={{
               640: {
