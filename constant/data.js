@@ -187,33 +187,33 @@ export const workData = [
 ];
 
 // Testimonial data
-export const TestimonialData = [
+export const testimonialData = [
   {
     url: "/person-1.jpg",
     name: "Olivia Anderson",
     position: "Customer",
     message:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam dolore molestiae veritatis aspernatur vero totam est consequuntur illo at dolor.",
+      "Lorem, ipsum dolor sit amet Ullam dolore molestiae veritatis aspernatur vero totam est consequuntur illo at dolor.",
   },
   {
     url: "/person-2.jpg",
-    name: "Olivia Anderson",
+    name: "Lucas Taylor",
     position: "Customer",
     message:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam dolore molestiae veritatis aspernatur vero totam est consequuntur illo at dolor.",
+      "Lorem, ipsum dolor sit amet Ullam dolore molestiae veritatis aspernatur vero totam est consequuntur illo at dolor.",
   },
   {
     url: "/person-3.jpg",
-    name: "Olivia Anderson",
+    name: "Emma Brown",
     position: "Customer",
     message:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam dolore molestiae veritatis aspernatur vero totam est consequuntur illo at dolor.",
+      "Lorem, ipsum dolor sit amet Ullam dolore molestiae veritatis aspernatur vero totam est consequuntur illo at dolor.",
   },
   {
     url: "/person-4.jpg",
-    name: "Olivia Anderson",
+    name: "Shopia Martinez",
     position: "Customer",
     message:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam dolore molestiae veritatis aspernatur vero totam est consequuntur illo at dolor.",
+      "Lorem, ipsum dolor sit amet Ullam dolore molestiae veritatis aspernatur vero totam est consequuntur illo at dolor.",
   },
 ];
