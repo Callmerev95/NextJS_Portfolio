@@ -122,3 +122,98 @@ export const aboutData = [
     ],
   },
 ];
+
+// Work data
+export const workData = [
+  {
+    title: "FrontEnd",
+    projects: [
+      {
+        title: "Website",
+        url: "/img1.png",
+      },
+      {
+        title: "Website",
+        url: "/img2.png",
+      },
+      {
+        title: "Application",
+        url: "/img3.png",
+      },
+      {
+        title: "Application",
+        url: "/img4.png",
+      },
+    ],
+  },
+  {
+    title: "Backend",
+    projects: [
+      {
+        title: "Website",
+        url: "/img4.png",
+      },
+      {
+        title: "Website",
+        url: "/img3.png",
+      },
+      {
+        title: "Application",
+        url: "/img1.png",
+      },
+      {
+        title: "Application",
+        url: "/img5.png",
+      },
+    ],
+  },
+  {
+    title: "Full Stack",
+    projects: [
+      {
+        title: "Website",
+        url: "/img1.png",
+      },
+      {
+        title: "Website",
+        url: "/img2.png",
+      },
+      {
+        title: "Application",
+        url: "/img3.png",
+      },
+    ],
+  },
+];
+
+// Testimonial data
+export const TestimonialData = [
+  {
+    url: "/person-1.jpg",
+    name: "Olivia Anderson",
+    position: "Customer",
+    message:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam dolore molestiae veritatis aspernatur vero totam est consequuntur illo at dolor.",
+  },
+  {
+    url: "/person-2.jpg",
+    name: "Olivia Anderson",
+    position: "Customer",
+    message:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam dolore molestiae veritatis aspernatur vero totam est consequuntur illo at dolor.",
+  },
+  {
+    url: "/person-3.jpg",
+    name: "Olivia Anderson",
+    position: "Customer",
+    message:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam dolore molestiae veritatis aspernatur vero totam est consequuntur illo at dolor.",
+  },
+  {
+    url: "/person-4.jpg",
+    name: "Olivia Anderson",
+    position: "Customer",
+    message:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam dolore molestiae veritatis aspernatur vero totam est consequuntur illo at dolor.",
+  },
+];
