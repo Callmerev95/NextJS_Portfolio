@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <header className="max_padd_container flexBetween absolute top-0 w-full">
       {/* logo */}
-      <Link href={"/"}>
+      <Link href={"/"} className="flexCenter py-3">
         <Image src={"./logo.svg"} alt="logo" height={99} width={99}></Image>
       </Link>
       {/* icons & buttons */}
