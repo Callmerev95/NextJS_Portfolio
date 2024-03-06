@@ -1,12 +1,13 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import { testimonialData } from "@/constant/data";
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import { testimonialData } from "@/constant/data";
-import Image from "next/image";
+import FadeIn from "@/components/FadeIn";
 
 const Testimonials = () => {
   return (
@@ -14,7 +15,13 @@ const Testimonials = () => {
       <div className="pt-12">
         {/* title */}
         <div>
-          <div className="pb-10 text-center">
+          <motion.div
+            variants={FadeIn("up", 0.9)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="pb-10 text-center"
+          >
             <div className="inline-block my-2">
               <motion.span
                 className="uppercase bold-20 px-2 py-1 rounded-md"
@@ -44,10 +51,16 @@ const Testimonials = () => {
               Repudiandae debitis vitae sunt recusandae culpa deserunt beatae
               omnis adipisci veritatis, maxime iusto pariatur ipsa enim.
             </p>
-          </div>
+          </motion.div>
         </div>
         {/* Testimonials */}
-        <div className="max-w-[80%] mx-auto">
+        <motion.div
+          variants={FadeIn("down", 0.9)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="max-w-[80%] mx-auto"
+        >
           <Swiper
             breakpoints={{
               640: {
@@ -98,7 +111,7 @@ const Testimonials = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
