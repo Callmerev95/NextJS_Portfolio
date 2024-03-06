@@ -11,6 +11,7 @@ import { FaEye } from "react-icons/fa";
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
+import FadeIn from "@/components/FadeIn";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -22,7 +23,13 @@ const Work = () => {
       <div className="pt-12">
         {/* title */}
         <div>
-          <div className="pb-10 text-center">
+          <motion.div
+            variants={FadeIn("up", 0.9)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="pb-10 text-center"
+          >
             <div className="inline-block my-2">
               <motion.span
                 className="uppercase bold-20 px-2 py-1 rounded-md"
@@ -54,10 +61,16 @@ const Work = () => {
               consequuntur voluptates? Saepe nihil est rem quibusdam quisquam
               pariatur dolor. Expedita nostrum animi pariatur.
             </p>
-          </div>
+          </motion.div>
         </div>
         {/* tabs */}
-        <div className="flexCenter gap-x-5 mb-8">
+        <motion.div
+          variants={FadeIn("up", 0.9)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="flexCenter gap-x-5 mb-8"
+        >
           {workData.map((category, index) => (
             <button
               key={index}
@@ -70,9 +83,15 @@ const Work = () => {
               {category.title}
             </button>
           ))}
-        </div>
+        </motion.div>
         {/* project */}
-        <div className="max-w-[80%] mx-auto">
+        <motion.div
+          variants={FadeIn("down", 0.9)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="max-w-[80%] mx-auto"
+        >
           <Swiper
             breakpoints={{
               640: {
@@ -143,7 +162,7 @@ const Work = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
