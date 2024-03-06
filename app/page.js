@@ -2,6 +2,7 @@
 import Image from "next/image";
 // Framer-motion
 import { motion } from "framer-motion";
+import FadeIn from "@/components/FadeIn";
 // Typewriter
 import { Typewriter } from "react-simple-typewriter";
 // react icons
@@ -12,7 +13,13 @@ export default function Home() {
     <section className="max_padd_container py-16 h-screen lg:py-32">
       <div className="flex gap-8 flex-col pt-8 xl:flex-row xl:pt-8">
         {/* left */}
-        <div className="flex flex-1 flex-col lg:pt-8 text-center xl:text-start">
+        <motion.div
+          variants={FadeIn("left", 0.9)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="flex flex-1 flex-col lg:pt-8 text-center xl:text-start"
+        >
           <div className="mb-2">
             <motion.span
               className="uppercase bold-20 px-2 py-1 rounded-md"
@@ -73,9 +80,15 @@ export default function Home() {
               </div>
             </button>
           </div>
-        </div>
+        </motion.div>
         {/* right */}
-        <div className="flex flexCenter relative lg:-top-4">
+        <motion.div
+          variants={FadeIn("right", 0.9)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="flex flexCenter relative lg:-top-4"
+        >
           <Image
             src={"/bgg.jpg"}
             alt="bgImg"
@@ -83,7 +96,7 @@ export default function Home() {
             width={510}
             className="h-[288px] lg:h-[466px] w-auto"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );
