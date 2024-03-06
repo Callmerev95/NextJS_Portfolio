@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Accordion from "@/components/Accordion";
 import LanguageProgress from "@/components/LanguageProgress";
 import { aboutData } from "@/constant/data";
+import FadeIn from "@/components/FadeIn";
 
 const About = () => {
   const [index, setIndex] = useState(0);
@@ -12,7 +13,13 @@ const About = () => {
     <section className=" max_padd_container py-16 h-screen xl:py-32 bg-primary text-tertiary">
       <div className="flex gap-12 flex-col pt-8 xl:flex-row xl:pt-8">
         {/* left */}
-        <div className="flex flex-1 flex-col xl:pt-8 max-xl:flexCenter">
+        <motion.div
+          variants={FadeIn("up", 0.9)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="flex flex-1 flex-col xl:pt-8 max-xl:flexCenter"
+        >
           <div className="inline-block my-2">
             <motion.span
               className="uppercase bold-20 px-2 py-1 rounded-md"
@@ -47,9 +54,15 @@ const About = () => {
           <div className="hidden xl:flex">
             <Accordion />
           </div>
-        </div>
+        </motion.div>
         {/* right */}
-        <div className="flex flex-1 flex-col xl:pt-8">
+        <motion.div
+          variants={FadeIn("down", 0.9)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="flex flex-1 flex-col xl:pt-8"
+        >
           {/* progressbars */}
           <div>
             <LanguageProgress />
@@ -89,7 +102,7 @@ const About = () => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
