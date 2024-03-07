@@ -1,13 +1,14 @@
 "use client";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import { testimonialData } from "@/constant/data";
+// Framer motion
+import { motion } from "framer-motion";
+import FadeIn from "@/components/FadeIn";
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import FadeIn from "@/components/FadeIn";
 
 const Testimonials = () => {
   return (
@@ -16,7 +17,7 @@ const Testimonials = () => {
         {/* title */}
         <div>
           <motion.div
-            variants={FadeIn("up", 0.9)}
+            variants={FadeIn("right", 0.9)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -55,7 +56,7 @@ const Testimonials = () => {
         </div>
         {/* Testimonials */}
         <motion.div
-          variants={FadeIn("down", 0.9)}
+          variants={FadeIn("left", 0.9)}
           initial="hidden"
           animate="show"
           exit="hidden"

@@ -1,7 +1,9 @@
 "use client";
-import FadeIn from "@/components/FadeIn";
-import { motion } from "framer-motion";
 import { useState } from "react";
+// Framer motion
+import { motion } from "framer-motion";
+import FadeIn from "@/components/FadeIn";
+// React icons
 import { IoIosSend } from "react-icons/io";
 
 const Contact = () => {
@@ -32,7 +34,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="max_pad_container py-12 xl:py-24 h-screen bg-primary text-tertiary">
+    <section className="max_pad_container py-12 lg:py-20 h-screen bg-primary text-tertiary">
       <div className="pt-12">
         {/* title */}
         <div>

@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 
 const LanguageProgress = () => {
   const languages = [
-    { language: "MongoDB", proficiency: 70, bgColor: "#61dafb" },
-    { language: "Express", proficiency: 65, bgColor: "#68a063" },
-    { language: "React", proficiency: 90, bgColor: "#edf3d8" },
-    { language: "Node.Js", proficiency: 82, bgColor: "#61dafb" },
-    { language: "Next.Js", proficiency: 85, bgColor: "#ffabe7" },
-    { language: "JavaScript", proficiency: 90, bgColor: "#2965f1" },
+    { language: "MongoDB", proficiency: 55, bgColor: "#4db33d" },
+    { language: "Express", proficiency: 70, bgColor: "#333333" },
+    { language: "React", proficiency: 90, bgColor: "#61dbfb" },
+    { language: "Node.Js", proficiency: 75, bgColor: "#3c873a" },
+    { language: "Next.Js", proficiency: 90, bgColor: "#232c61" },
+    { language: "JavaScript", proficiency: 95, bgColor: "#f0db4f" },
   ];
 
   return (

@@ -1,18 +1,19 @@
 "use client";
 import React, { useState } from "react";
-import { motion } from "framer-motion";
 import Accordion from "@/components/Accordion";
 import LanguageProgress from "@/components/LanguageProgress";
 import { aboutData } from "@/constant/data";
+// Farmer motion
+import { motion } from "framer-motion";
 import FadeIn from "@/components/FadeIn";
 
 const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <section className=" max_padd_container py-16 h-screen xl:py-32 bg-primary text-tertiary">
+    <section className=" max_padd_container py-16 h-screen lg:py-20 bg-primary text-tertiary">
       <div className="flex gap-12 flex-col pt-8 xl:flex-row xl:pt-8">
-        {/* left */}
+        {/* Left Side */}
         <motion.div
           variants={FadeIn("up", 0.9)}
           initial="hidden"
@@ -55,7 +56,8 @@ const About = () => {
             <Accordion />
           </div>
         </motion.div>
-        {/* right */}
+
+        {/* Right Side */}
         <motion.div
           variants={FadeIn("down", 0.9)}
           initial="hidden"

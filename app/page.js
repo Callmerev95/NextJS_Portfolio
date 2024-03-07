@@ -5,14 +5,14 @@ import { motion } from "framer-motion";
 import FadeIn from "@/components/FadeIn";
 // Typewriter
 import { Typewriter } from "react-simple-typewriter";
-// react icons
+// React icons
 import { MdDownload } from "react-icons/md";
 
 export default function Home() {
   return (
     <section className="max_padd_container py-16 h-screen lg:py-32">
       <div className="flex gap-8 flex-col pt-8 xl:flex-row xl:pt-8">
-        {/* left */}
+        {/* Left Side */}
         <motion.div
           variants={FadeIn("left", 0.9)}
           initial="hidden"
@@ -81,16 +81,16 @@ export default function Home() {
             </button>
           </div>
         </motion.div>
-        {/* right */}
+        {/* Right Side */}
         <motion.div
           variants={FadeIn("right", 0.9)}
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flexCenter relative lg:-top-4"
+          className="flex flexCenter relative lg:-top-8 lg:-ml-5"
         >
           <Image
-            src={"/bgg.jpg"}
+            src={"/profile1.png"}
             alt="bgImg"
             height={600}
             width={510}

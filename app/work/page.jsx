@@ -1,9 +1,11 @@
 "use client";
 import { workData } from "@/constant/data";
-import { motion } from "framer-motion";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+// Framer motion
+import { motion } from "framer-motion";
+import FadeIn from "@/components/FadeIn";
 // icons
 import { BiSolidLike } from "react-icons/bi";
 import { MdOutlineZoomOutMap } from "react-icons/md";
@@ -11,7 +13,6 @@ import { FaEye } from "react-icons/fa";
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-import FadeIn from "@/components/FadeIn";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -19,12 +20,12 @@ const Work = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <section className="max_pad_container py-12 xl:py-24 h-screen">
-      <div className="pt-12">
+    <section className="max_pad_container py-12 lg:py-14 h-screen">
+      <div className="pt-12 lg:pt-10">
         {/* title */}
         <div>
           <motion.div
-            variants={FadeIn("up", 0.9)}
+            variants={FadeIn("down", 0.9)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -86,7 +87,7 @@ const Work = () => {
         </motion.div>
         {/* project */}
         <motion.div
-          variants={FadeIn("down", 0.9)}
+          variants={FadeIn("up", 0.9)}
           initial="hidden"
           animate="show"
           exit="hidden"
