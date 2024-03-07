@@ -10,8 +10,8 @@ const nunito = Nunito({
 });
 
 export const metadata = {
-  title: "Revangga Portfolio",
-  description: "Revangga Putra Portfolio",
+  title: "Portfolio",
+  description: "Next.Js Portfolio",
 };
 
 export default function RootLayout({ children }) {

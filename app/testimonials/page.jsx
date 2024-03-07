@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 
 const Testimonials = () => {
   return (
-    <section className="max_pad_container py-12 xl:py-24 h-screen bg-primary text-tertiary">
+    <section className="max_pad_container py-12 lg:py-14 h-screen bg-primary text-tertiary">
       <div className="pt-12">
         {/* title */}
         <div>
